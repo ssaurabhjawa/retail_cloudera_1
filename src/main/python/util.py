@@ -31,7 +31,7 @@ def get_spark_session(env, appName):
 
 def get_config():
     props = cp.ConfigParser()
-    props.read_file(open("src/main/resources/config.ini"))
+    props.read_file(open("../resources/config.ini"))
     config_dict = {}
     for each_section in props.sections():
         for (config_key, config_val) in props.items(each_section):
